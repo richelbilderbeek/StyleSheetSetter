@@ -1,8 +1,8 @@
 INCLUDEPATH += \
-  ../../Tools/ToolStyleSheetSetter
+  ../StyleSheetSetter
 
 HEADERS += \
-    ../../Tools/ToolStyleSheetSetter/stylesheetsettermenudialog.h
+    ../StyleSheetSetter/stylesheetsettermenudialog.h
 
 SOURCES += \
-    ../../Tools/ToolStyleSheetSetter/stylesheetsettermenudialog.cpp
+    ../StyleSheetSetter/stylesheetsettermenudialog.cpp
