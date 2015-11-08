@@ -51,15 +51,6 @@ ribi::Help ribi::StyleSheetSetterMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::StyleSheetSetterMenuDialog::GetProgram() const noexcept
-{
-  boost::shared_ptr<const ribi::Program> p {
-    new ribi::ProgramStyleSheetSetter
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::StyleSheetSetterMenuDialog::GetVersion() const noexcept
 {
   return "1.1";
