@@ -26,3 +26,9 @@
 *.exe
 *.out
 *.app
+Makefile
+Makefile.*
+object_script*
+*plugin_import.cpp
+ui_*
+release/
