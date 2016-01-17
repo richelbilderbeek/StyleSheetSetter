@@ -14,8 +14,8 @@
    <string>StyleSheetSetter</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="ToolStyleSheetSetter.qrc">
-    <normaloff>:/images/R.png</normaloff>:/images/R.png</iconset>
+   <iconset resource="StyleSheetSetter.qrc">
+    <normaloff>:/StyleSheetSetter/images/R.png</normaloff>:/StyleSheetSetter/images/R.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -121,7 +121,7 @@ QSlider, QPushButton, QDial
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="ToolStyleSheetSetter.qrc"/>
+  <include location="StyleSheetSetter.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -1,4 +1,4 @@
-include (../StyleSheetSetter/ToolStyleSheetSetterConsole.pri)
+include (../StyleSheetSetter/StyleSheetSetterConsole.pri)
 
 HEADERS += \
     ../StyleSheetSetter/qtstylesheetsettermaindialog.h \
@@ -13,4 +13,4 @@ SOURCES += \
     ../StyleSheetSetter/qtstylesheetsettermenudialog.cpp
 
 RESOURCES += \
-    ../StyleSheetSetter/ToolStyleSheetSetter.qrc
+    ../StyleSheetSetter/StyleSheetSetter.qrc

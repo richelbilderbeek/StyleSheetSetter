@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>131</width>
-    <height>393</height>
+    <width>264</width>
+    <height>428</height>
    </rect>
   </property>
   <property name="font">
@@ -17,6 +17,10 @@
   </property>
   <property name="windowTitle">
    <string>StyleSheetSetter</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/R.png</normaloff>:/images/R.png</iconset>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -71,12 +75,21 @@
     </widget>
    </item>
    <item>
-    <widget class="QLabel" name="image_gabor">
+    <widget class="QLabel" name="image">
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>:/images/ToolGaborFilter.png</pixmap>
+      <pixmap resource="StyleSheetSetter.qrc">:/StyleSheetSetter/images/StyleSheetSetterWelcome.png</pixmap>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>
@@ -107,6 +120,8 @@
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="StyleSheetSetter.qrc"/>
+ </resources>
  <connections/>
 </ui>

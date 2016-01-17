@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/StyleSheetSetter/images">
+        <file>R.png</file>
+        <file>StyleSheetSetterWelcome.png</file>
+    </qresource>
+</RCC>
