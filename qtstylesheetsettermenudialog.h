@@ -31,9 +31,6 @@ private slots:
 private:
   Ui::QtStyleSheetSetterMenuDialog *ui;
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi

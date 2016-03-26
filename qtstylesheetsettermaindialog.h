@@ -31,9 +31,6 @@ private:
   Ui::QtStyleSheetSetterMainDialog *ui;
   std::string m_stylesheet;
 
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi
