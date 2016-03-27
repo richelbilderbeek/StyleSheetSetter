@@ -7,3 +7,6 @@ include(../RibiLibraries/GeneralDesktop.pri)
 include(../StyleSheetSetter/StyleSheetSetterDesktop.pri)
 
 SOURCES += qtmain.cpp
+
+# QResources give this error
+QMAKE_CXXFLAGS += -Wno-unused-variable
