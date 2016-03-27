@@ -16,9 +16,6 @@ ribi::QtStyleSheetSetterMainDialog::QtStyleSheetSetterMainDialog(
     ui(new Ui::QtStyleSheetSetterMainDialog),
     m_stylesheet(stylesheet)
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
   ui->stylesheet->setPlainText(m_stylesheet.c_str());
   //Put the dialog in the screen center
@@ -44,15 +41,3 @@ void ribi::QtStyleSheetSetterMainDialog::on_stylesheet_textChanged()
   m_stylesheet = ui->stylesheet->toPlainText().toStdString();
   this->setStyleSheet(m_stylesheet.c_str());
 }
-
-#ifndef NDEBUG
-void ribi::QtStyleSheetSetterMainDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

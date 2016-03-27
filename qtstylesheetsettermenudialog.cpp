@@ -14,9 +14,6 @@ ribi::QtStyleSheetSetterMenuDialog::QtStyleSheetSetterMenuDialog(QWidget *parent
     QtHideAndShowDialog(parent),
     ui(new Ui::QtStyleSheetSetterMenuDialog)
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
   this->setStyleSheet(GetExampleStylesheet().c_str());
 }
@@ -84,15 +81,3 @@ void ribi::QtStyleSheetSetterMenuDialog::on_button_quit_clicked()
   this->close();
 }
 
-#ifndef NDEBUG
-void ribi::QtStyleSheetSetterMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  QtStyleSheetSetterMainDialog();
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif
