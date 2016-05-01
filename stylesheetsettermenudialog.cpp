@@ -14,8 +14,8 @@ int ribi::StyleSheetSetterMenuDialog::ExecuteSpecific(const std::vector<std::str
     std::cout << GetHelp() << '\n';
     return 1;
   }
-  assert(!"TODO");
-  return 1;
+  std::cout << "Cannot run StyleSheetSetterMenuDialog from the command line." << '\n';
+  return 0;
 }
 
 ribi::About ribi::StyleSheetSetterMenuDialog::GetAbout() const noexcept
@@ -49,15 +49,16 @@ ribi::Help ribi::StyleSheetSetterMenuDialog::GetHelp() const noexcept
 
 std::string ribi::StyleSheetSetterMenuDialog::GetVersion() const noexcept
 {
-  return "2.0";
+  return "2.1";
 }
 
 std::vector<std::string> ribi::StyleSheetSetterMenuDialog::GetVersionHistory() const noexcept
 {
   return {
-   "2013-01-09: version 0.1: initial version with a main dialog only",
-   "2013-11-29: version 1.0: conformized to ProjectRichelBilderbeek",
-   "2015-04-19: version 1.1: start with a nice example stylesheet",
-   "2016-01-17: version 2.0: moved to own GitHub"
+    "2013-01-09: version 0.1: initial version with a main dialog only",
+    "2013-11-29: version 1.0: conformized to ProjectRichelBilderbeek",
+    "2015-04-19: version 1.1: start with a nice example stylesheet",
+    "2016-01-17: version 2.0: moved to own GitHub",
+    "2016-05-01: version 2.1: notify that command-line-only version does nothing",
   };
 }
