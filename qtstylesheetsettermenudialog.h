@@ -14,7 +14,7 @@ namespace ribi {
 
 class QtStyleSheetSetterMenuDialog : public QtHideAndShowDialog
 {
-  Q_OBJECT
+  Q_OBJECT //!OCLINT
 
 public:
   explicit QtStyleSheetSetterMenuDialog(QWidget *parent = 0);

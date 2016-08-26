@@ -12,7 +12,7 @@ namespace ribi {
 
 class QtStyleSheetSetterMainDialog : public QtHideAndShowDialog
 {
-    Q_OBJECT
+    Q_OBJECT //!OCLINT
     
 public:
   explicit QtStyleSheetSetterMainDialog(const std::string& stylesheet = "", QWidget *parent = 0);
