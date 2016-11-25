@@ -17,7 +17,7 @@ before_install:
 
 install: 
   # Qt5
-  - sudo apt-get install -qq libqt5webkit5-dev qtdeclarative5-dev libqt5svg5*
+  - sudo apt-get install -qq libqt5webkit5-dev qtdeclarative5-dev
   - export QMAKE=/usr/lib/x86_64-linux-gnu/qt5/bin/qmake
   # C++14
   - sudo apt-get install -qq g++-5
@@ -36,7 +36,7 @@ before_script:
 script: 
   - ./download_other_githubs.sh
   - ./build_other_githubs.sh
-  - qmake StyleSheetSetterDesktop.pro
+  - qmake -qt=qt5 StyleSheetSetterDesktop.pro
   - make
   - ./StyleSheetSetterDesktop &
   - sudo killall -9 StyleSheetSetterDesktop
