@@ -5,9 +5,7 @@
 #include "qtaboutdialog.h"
 #include "stylesheetsettermenudialog.h"
 #include "qtstylesheetsettermaindialog.h"
-#include "testtimer.h"
 #include "ui_qtstylesheetsettermenudialog.h"
-#include "trace.h"
 #pragma GCC diagnostic pop
 
 ribi::QtStyleSheetSetterMenuDialog::QtStyleSheetSetterMenuDialog(QWidget *parent) :
@@ -57,7 +55,8 @@ std::string ribi::QtStyleSheetSetterMenuDialog::GetExampleStylesheet() const noe
     "QPushButton:disabled\n"
     "{\n"
     "  color: #000;\n"
-    "  background-color: qradialgradient(cx: 0.5, cy: 0.5,fx: 0.5, fy: 0.5,radius: 0.5, stop: 0 #fff, stop: 1 #6f6);\n"
+    "  background-color: qradialgradient("
+      "cx: 0.5, cy: 0.5,fx: 0.5, fy: 0.5,radius: 0.5, stop: 0 #fff, stop: 1 #6f6);\n"
     "  border: 3px solid #0f0\n"
     "}\n"
   ;
@@ -80,4 +79,3 @@ void ribi::QtStyleSheetSetterMenuDialog::on_button_quit_clicked()
 {
   this->close();
 }
-

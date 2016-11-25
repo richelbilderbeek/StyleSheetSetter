@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cpp_files=`ls *.cpp | egrep -v "^qrc_.*\.cpp$" | egrep -v "^moc_.*\.cpp$" | egrep -v "^.*_test\.cpp$"`
+cpp_files=`ls *.cpp | egrep -v "^moc_.*\.cpp$" | egrep -v "^qrc_.*\.cpp$"`
 h_files=`ls *.h | egrep -v "^ui_.*\.h$"`
 
 ./oclint-0.10.3/bin/oclint -o oclint.log \
@@ -8,40 +8,19 @@ h_files=`ls *.h | egrep -v "^ui_.*\.h$"`
   $cpp_files \
   $h_files \
   -- \
-  -c -std=c++14 -fPIC \
+  -c -std=c++14 -fPIE \
   -I../RibiClasses/CppAbout \
-  -I../ConceptMap \
-  -I../RibiClasses/CppContainer \
-  -I../RibiClasses/CppCounter \
-  -I../RibiClasses/CppFuzzy_equal_to \
-  -I../RibiClasses/CppGeometry \
-  -I../RibiClasses/CppHelp \
-  -I../RibiClasses/CppTestTimer \
   -I../RibiClasses/CppFileIo \
+  -I../RibiClasses/CppHelp \
   -I../RibiClasses/CppMenuDialog \
-  -I../RibiClasses/CppPlane \
   -I../RibiClasses/CppQtAboutDialog \
-  -I../RibiClasses/CppQtArrowItem \
-  -I../QtConceptMap \
   -I../RibiClasses/CppQtHideAndShowDialog \
-  -I../QtKeyboardFriendlyGraphicsView \
-  -I../RibiClasses/CppQtQuadBezierArrowItem \
-  -I../RibiClasses/CppQtRoundedEditRectItem \
-  -I../RibiClasses/CppQtRoundedRectItem \
-  -I../RibiClasses/CppQtScopedDisable \
-  -I../RibiClasses/CppRibiRegex \
-  -I../RibiClasses/CppTrace \
-  -I../RibiClasses/CppXml \
-  -I../BoostGraphTutorial/BoostGraphTutorial \
-  -I../StyleSheetSetter \
-  -I../RibiLibraries/Apfloat \
   -I/usr/include/c++/5 \
   -I/usr/include/x86_64-linux-gnu/c++/5 \
-  -I/usr/include/qt4 \
-  -I/usr/include/qt4/QtCore \
-  -I/usr/include/qt4/QtGui \
-  -I/usr/include/qt4/QtPrintSupport \
-  -I/usr/include/qt4/QtTest
+  -I/usr/include/qt5 \
+  -I/usr/include/qt5/QtCore \
+  -I/usr/include/qt5/QtGui \
+  -I/usr/include/qt5/QtWidgets 
 
 cat oclint.log
 

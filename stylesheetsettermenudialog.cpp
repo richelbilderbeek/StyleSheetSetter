@@ -3,9 +3,6 @@
 #include <cassert>
 #include <iostream>
 
-#include "trace.h"
-#include "testtimer.h"
-
 int ribi::StyleSheetSetterMenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {
   const int argc = static_cast<int>(argv.size());

@@ -5,8 +5,6 @@
 #include <QDesktopWidget>
 #include <QKeyEvent>
 
-#include "testtimer.h"
-#include "trace.h"
 #include "ui_qtstylesheetsettermaindialog.h"
 #pragma GCC diagnostic pop
 

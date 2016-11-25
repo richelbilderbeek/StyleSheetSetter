@@ -32,3 +32,9 @@ object_script*
 *plugin_import.cpp
 ui_*
 release/
+*.pro.user
+oclint-0.10.3/
+oclint-0.10.3-x86_64-linux-3.13.0-74-generic.tar.gz
+oclint.log
+StyleSheetSetter
+StyleSheetSetterDesktop
