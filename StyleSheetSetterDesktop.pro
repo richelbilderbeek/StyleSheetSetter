@@ -1,9 +1,12 @@
 # C++14
-QMAKE_CXX = g++-5
-QMAKE_LINK = g++-5
-QMAKE_CC = gcc-5
+QMAKE_CXXFLAGS += -std=c++14
+CONFIG += c++14
+
+# Fix error: unrecognized option '--push-state--no-as-needed'
+QMAKE_LFLAGS += -fuse-ld=gold
+
 # Qt does not go well with -Weffc++
-QMAKE_CXXFLAGS += -Wall -Wextra -Werror -std=c++14
+QMAKE_CXXFLAGS += -Wall -Wextra -Werror
 
 QT += core gui
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
