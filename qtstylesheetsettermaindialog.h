@@ -2,7 +2,8 @@
 #define TOOLSTYLESHEETSETTERMAINDIALOG_H
 
 #include <string>
-#include "qthideandshowdialog.h"
+#include <QDialog>
+//#include "qthideandshowdialog.h"
 
 namespace Ui {
   class QtStyleSheetSetterMainDialog;
@@ -10,7 +11,7 @@ namespace Ui {
 
 namespace ribi {
 
-class QtStyleSheetSetterMainDialog : public QtHideAndShowDialog
+class QtStyleSheetSetterMainDialog : public QDialog
 {
     Q_OBJECT //!OCLINT
     

@@ -10,7 +10,7 @@
 
 ribi::QtStyleSheetSetterMainDialog::QtStyleSheetSetterMainDialog(
   const std::string& stylesheet, QWidget *parent)
-  : QtHideAndShowDialog(parent),
+  : QDialog(parent),
     ui(new Ui::QtStyleSheetSetterMainDialog),
     m_stylesheet(stylesheet)
 {
