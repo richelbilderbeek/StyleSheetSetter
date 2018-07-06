@@ -65,7 +65,8 @@ std::string ribi::QtStyleSheetSetterMenuDialog::GetExampleStylesheet() const noe
 void ribi::QtStyleSheetSetterMenuDialog::on_button_start_clicked()
 {
   QtStyleSheetSetterMainDialog d(GetExampleStylesheet());
-  this->ShowChild(&d);
+  //this->ShowChild(&d);
+  d.exec();
 }
 
 void ribi::QtStyleSheetSetterMenuDialog::on_button_about_clicked()
