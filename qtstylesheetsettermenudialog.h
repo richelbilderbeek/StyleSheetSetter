@@ -3,7 +3,7 @@
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Weffc++"
-#include "qthideandshowdialog.h"
+#include <QDialog>
 #pragma GCC diagnostic pop
 
 namespace Ui {
@@ -12,7 +12,7 @@ namespace Ui {
 
 namespace ribi {
 
-class QtStyleSheetSetterMenuDialog : public QtHideAndShowDialog
+class QtStyleSheetSetterMenuDialog : public QDialog
 {
   Q_OBJECT //!OCLINT
 

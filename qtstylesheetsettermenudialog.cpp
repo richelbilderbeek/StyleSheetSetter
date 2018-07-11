@@ -9,7 +9,7 @@
 #pragma GCC diagnostic pop
 
 ribi::QtStyleSheetSetterMenuDialog::QtStyleSheetSetterMenuDialog(QWidget *parent) :
-    QtHideAndShowDialog(parent),
+    QDialog(parent),
     ui(new Ui::QtStyleSheetSetterMenuDialog)
 {
   ui->setupUi(this);
@@ -73,7 +73,7 @@ void ribi::QtStyleSheetSetterMenuDialog::on_button_about_clicked()
 {
   QtAboutDialog d(StyleSheetSetterMenuDialog().GetAbout());
   d.setStyleSheet(GetExampleStylesheet().c_str());
-  this->ShowChild(&d);
+  d.exec();
 }
 
 void ribi::QtStyleSheetSetterMenuDialog::on_button_quit_clicked()
