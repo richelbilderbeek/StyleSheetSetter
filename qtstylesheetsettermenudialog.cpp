@@ -1,12 +1,12 @@
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
+
+
 #include "qtstylesheetsettermenudialog.h"
 
 #include "qtaboutdialog.h"
 #include "stylesheetsettermenudialog.h"
 #include "qtstylesheetsettermaindialog.h"
 #include "ui_qtstylesheetsettermenudialog.h"
-#pragma GCC diagnostic pop
+
 
 ribi::QtStyleSheetSetterMenuDialog::QtStyleSheetSetterMenuDialog(QWidget *parent) :
     QDialog(parent),
