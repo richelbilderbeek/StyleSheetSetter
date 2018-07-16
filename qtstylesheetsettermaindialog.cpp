@@ -1,12 +1,12 @@
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Weffc++"
+
+
 #include "qtstylesheetsettermaindialog.h"
 
 #include <QDesktopWidget>
 #include <QKeyEvent>
 
 #include "ui_qtstylesheetsettermaindialog.h"
-#pragma GCC diagnostic pop
+
 
 ribi::QtStyleSheetSetterMainDialog::QtStyleSheetSetterMainDialog(
   const std::string& stylesheet, QWidget *parent)
