@@ -103,7 +103,7 @@ QSlider, QPushButton, QDial
          <string>QPushButton with icon</string>
         </property>
         <property name="icon">
-         <iconset>
+         <iconset resource="../Brainweaver/Brainweaver.qrc">
           <normaloff>:/images/PicRed14x14.png</normaloff>:/images/PicRed14x14.png</iconset>
         </property>
         <property name="checkable">
@@ -114,6 +114,83 @@ QSlider, QPushButton, QDial
         </property>
        </widget>
       </item>
+      <item row="3" column="1" colspan="3">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="alternatingRowColors">
+         <bool>true</bool>
+        </property>
+        <row>
+         <property name="text">
+          <string>First row</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Second</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Third</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>Fourth</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>First column</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Second</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>A</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>E</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>B</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>F</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>C</string>
+         </property>
+        </item>
+        <item row="2" column="1">
+         <property name="text">
+          <string>G</string>
+         </property>
+        </item>
+        <item row="3" column="0">
+         <property name="text">
+          <string>D</string>
+         </property>
+        </item>
+        <item row="3" column="1">
+         <property name="text">
+          <string>H</string>
+         </property>
+        </item>
+       </widget>
+      </item>
      </layout>
     </widget>
    </item>
@@ -121,6 +198,7 @@ QSlider, QPushButton, QDial
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
+  <include location="../Brainweaver/Brainweaver.qrc"/>
   <include location="StyleSheetSetter.qrc"/>
  </resources>
  <connections/>
