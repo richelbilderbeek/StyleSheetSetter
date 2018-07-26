@@ -3,7 +3,6 @@
 
 #include <string>
 #include <QDialog>
-//#include "qthideandshowdialog.h"
 
 namespace Ui {
   class QtStyleSheetSetterMainDialog;
