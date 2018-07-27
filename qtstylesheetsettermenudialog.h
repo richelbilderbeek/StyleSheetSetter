@@ -12,7 +12,7 @@ namespace Ui {
 
 namespace ribi {
 
-class QtStyleSheetSetterMenuDialog : public QDialog
+class QtStyleSheetSetterMenuDialog final : public QDialog
 {
   Q_OBJECT //!OCLINT
 
