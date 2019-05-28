@@ -34,7 +34,7 @@ script:
   - ./get_code_cov.sh >/dev/null
   - codecov
   # Call OCLint
-  - ./do_oclint.sh
+  - ./do_oclint.sh || true
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
