@@ -1,5 +1,7 @@
 # StyleSheetSetter
 
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/StyleSheetSetter/).
+
 Tool to experiment with QStyleSheets. It shows a dialog and its editable QStyleSheet. StyleSheetSetter is written in C++ using Qt.
 
 ![StyleSheetSetter menu v2.0](Screenshots/StyleSheetSetterMenu_2_0.png)
