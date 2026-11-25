@@ -2,7 +2,8 @@
 
 Edit the stylesheet of an application.
 
-StyleSheetSetter is one of [Richèl Bilderbeek's tools](https://richelbilderbeek.github.io/tools/).
+StyleSheetSetter is one of [Richèl Bilderbeek's
+tools](https://richelbilderbeek.github.io/tools/).
 
 ![StyleSheetSetter](StyleSheetSetter_2_0.png)
 
