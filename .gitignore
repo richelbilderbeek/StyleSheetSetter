@@ -40,3 +40,7 @@ StyleSheetSetter
 StyleSheetSetterDesktop
 
 site/
+
+wordlist.dic
+
+coverage/

@@ -8,4 +8,3 @@ Tool to experiment with QStyleSheets. It shows a dialog and its editable QStyleS
 
 ![StyleSheetSetter v2.0](Screenshots/StyleSheetSetter_2_0.png)
 
-

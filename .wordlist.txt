@@ -1,0 +1,6 @@
+Bilderbeek's
+QStyleSheet
+QStyleSheets
+Richèl
+StyleSheetSetter
+stylesheet
