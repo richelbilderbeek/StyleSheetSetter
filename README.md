@@ -1,5 +1,7 @@
 # StyleSheetSetter
 
+[![Codecov](https://codecov.io/gh/richelbilderbeek/StyleSheetSetter/branch/main/graph/badge.svg)](https://codecov.io/gh/richelbilderbeek/StyleSheetSetter)
+
 [Go to the nicely rendered
 website](https://richelbilderbeek.github.io/StyleSheetSetter/).
 

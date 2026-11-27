@@ -2,7 +2,7 @@
 site_name = "StyleSheetSetter"
 site_url = "https://richelbilderbeek.github.io/StyleSheetSetter/"
 repo_url = "https://github.com/richelbilderbeek/StyleSheetSetter"
-edit_uri = "blob/master/docs/"
+edit_uri = "blob/main/docs/"
 
 nav = [
   { "Start" = "README.md"}
